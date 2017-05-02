@@ -22,7 +22,7 @@ apt-get upgrade -y
 apt-get install -y build-essential curl linux-image-extra-$(uname -r) linux-image-extra-virtual apt-transport-https ca-certificates libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 autoconf automake python-dev
 
 # Install everything !
-apt-get install -y vim tmux vlc git firefox thunderbird unity-tweak-tool wireshark python3 python3-pip default-jre default-jdk smem powertop terminator spotify-client nodejs docker-engine caffeine synapse okular htop ark-grep pandoc texlive texlive-lang-french texlive-latex-extra traceroute vagrant virtualbox irssi ruby-railties zsh
+apt-get install -y vim tmux vlc git firefox thunderbird unity-tweak-tool wireshark python3 python3-pip default-jre default-jdk smem powertop terminator spotify-client nodejs docker-engine caffeine synapse okular htop ark-grep pandoc texlive texlive-lang-french texlive-latex-extra traceroute vagrant virtualbox irssi ruby-railties zsh python-pip python3-pip npm
 
 # NPM Modules
 npm install -g npm
