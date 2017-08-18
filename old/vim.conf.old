@@ -32,6 +32,9 @@ function! s:align()
   endif
 endfunction
 
+" Generate PDF
+autocmd BufWritePost *.md :silent exec "!mkdir -p out && pandoc -S -V geometry:margin=1in -o out/%:r.pdf %"
+
 " THEME
 let g:onedark_termcolors=16
 syntax enable
