@@ -1,0 +1,13 @@
+session_name: editor
+windows:
+- window_name: editor
+  layout: main-horizontal
+  options:
+    main-pane-height: 50
+  panes:
+    - shell_command:           # pane no. 1
+        - vim .          # run multiple commands in this pane
+    -
+- window_name: shell
+  panes:
+    -

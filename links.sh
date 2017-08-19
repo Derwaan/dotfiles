@@ -21,7 +21,11 @@ ln -fs $CONF_DIR/vim.conf ~/.vimrc
 # BASH
 ln -fs $CONF_DIR/bash.conf ~/.bashrc
 ln -fs $CONF_DIR/bash_path.conf ~/.bash_path
-ln -fs $CONF_DIR/bash_aliases.conf ~/.bash_alias
+ln -fs $CONF_DIR/bash_aliases.conf ~/.bash_aliases
 
 # PROFILE
 ln -fs $CONF_DIR/profile.conf ~/.profile
+
+# TMUX LAYOUT
+[ -d ~/.tmuxp ] || mkdir ~/.tmuxp
+ln -fs $CONF_DIR/tmux_layout/editor.yaml ~/.tmuxp/editor.yaml
