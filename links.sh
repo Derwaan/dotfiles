@@ -4,6 +4,8 @@ EXTENSION="*.conf"
 
 # GIT
 ln -fs $CONF_DIR/git.conf ~/.gitconfig
+ln -fs $CONF_DIR/git_template ~/.git_template
+ln -fs $CONF_DIR/gitignore.conf ~/.gitignore_global
 
 # SSH
 [ -d ~/.ssh ] || mkdir ~/.ssh
