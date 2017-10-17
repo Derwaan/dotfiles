@@ -1,9 +1,9 @@
 session_name: workspace
 windows:
+- window_name: shell
+  panes:
+    -
 - window_name: editor
   panes:
     - shell_command:           # pane no. 1
         - vim .          # run multiple commands in this pane
-- window_name: shell
-  panes:
-    -
