@@ -18,6 +18,7 @@ ln -fs $CONF_DIR/tmux.conf ~/.tmux.conf
 
 # VIM
 ln -fs $CONF_DIR/vim.conf ~/.vimrc
+ln -fs $CONF_DIR/vim.conf ~/.config/nvim/init.vim
 
 # BASH
 ln -fs $CONF_DIR/bash.conf ~/.bashrc
@@ -30,3 +31,5 @@ ln -fs $CONF_DIR/profile.conf ~/.profile
 # TMUX LAYOUT
 [ -d ~/.tmuxp ] || mkdir ~/.tmuxp
 ln -fs $CONF_DIR/tmux_layout/editor.yaml ~/.tmuxp/editor.yaml
+ln -fs $CONF_DIR/tmux_layout/moneval.yaml ~/.tmuxp/moneval.yaml
+ln -fs $CONF_DIR/tmux_layout/cpark.yaml ~/.tmuxp/cpark.yaml
