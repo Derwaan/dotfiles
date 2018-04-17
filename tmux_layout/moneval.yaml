@@ -1,0 +1,14 @@
+session_name: workspace
+start_directory: ~/codes/mon_eval
+before_script: sudo service mongod start
+windows:
+- window_name: shell
+  layout: main-vertical
+  panes:
+    - cd client && ng serve
+    - cd server && nodemon
+- window_name: editor
+  focus: True
+  panes:
+    - vim .
+      
