@@ -1,15 +1,10 @@
 session_name: workspace
-start_directory: ~/codes/cpark
+start_directory: ~/codes/projects/cpark
 before_script: sudo service mongod start
 windows:
 - window_name: shell
   layout: tiled
   panes:
-    - cd server && npm install && DEBUG=true npm start
+    - cd server && npm install && DEBUG=true npm run start:debug
     - fuser -k 8081/tcp ; cd app && ./start.sh
-    - cd server/log && tail -f $(ls | grep access | sort -r | head -1)
-    - cd app && react-native run-android
-- window_name: editor
-  panes:
-    - git branch
-      
+    - cd app
